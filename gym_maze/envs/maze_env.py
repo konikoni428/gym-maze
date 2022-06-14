@@ -9,6 +9,8 @@ from gym_maze.envs.maze_view_2d import MazeView2D
 class MazeEnv(gym.Env):
     metadata = {
         "render.modes": ["human", "rgb_array"],
+        "render_modes": ["human", "rgb_array"],
+        "render_fps": 10
     }
 
     ACTION = ["N", "S", "E", "W"]
